@@ -6,8 +6,9 @@
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
     --laranja: #EB9B00;
-    --laranja-degrade: linear-gradient(97.54deg, #B80B00 35.49%, #e9ab00 165.37%);
+    --vermelho-degrade: linear-gradient(97.54deg, #B80B00 35.49%, #b89c00 165.37%);
     --fonte-principal: "Poppins";
+    --azul: #002F52;
 }
 
 body {

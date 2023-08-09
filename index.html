@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -20,9 +21,7 @@
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
-            <li class="lista-menu__titulo">
-                Categorias
-            </li>
+                <li class="lista-menu__titulo">Categorias</li>
             <li class="lista-menu__item">
                 <a href="https://samircort.github.io/sitequimica/">Combustão</a>
             </li>
@@ -53,12 +52,12 @@
             <li class="lista-menu__item">
                 <a href="https://math07mpo.github.io/energia.solar/">Custo de Energia</a>
             </li>
-           </ul>
+            </ul>
             <img src="img/logo.png" alt="Logo" class="container__imagem">
         </div>
         <div class="container">
-            <a href="#"><img src="img/favs.png" alt="Meus favoritos" class="container__imagem"></a>
-            <a href="#"><img src="img/compras.png" alt="Carrinhos de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/favs.png" alt="Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/compras.png" alt="Sacola de compras" class="container__imagem"></a>
             <a href="#"><img src="img/perfil.png" alt="Meu perfil" class="container__imagem"></a>
         </div>
     </header>
@@ -68,7 +67,81 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">ENERGIAS RENOVÁVEIS QUE SUBSTITUEM COMBUSTÍVEIS FOSSEIS</h2>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Solar.png"></div>
+                <div class="swiper-slide"><img src="img/Biomassa.png"></div>
+                <div class="swiper-slide"><img src="img/Hídrica.png"></div>
+                <div class="swiper-slide"><img src="img/Como é produzido a gasolina.png"></div>
+                <div class="swiper-slide"><img src="img/Como é produzido o diesel.png"></div>
+                <div class="swiper-slide"><img src="img/Como é produzido o etanol.png"></div>
+                <div class="swiper-slide"><img src="img/A fórmula do etanol.png"></div>
+                <div class="swiper-slide"><img src="img/Gráfico de entalpia.png"></div>
+            </div>
+
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descrição">
+                    <h2 class="descrição__titulo-livro">BIODIESEL</h2>
+                    <p class="descrição__texto">É um biocombustível derivado de fontes renováveis como óleos vegetais e gorduras animais.</p>
+                </div>
+                <img src="img/Biodiesel.png" class="descrição__imagem">
+            </div>
+
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/favs.png" alt="Favoritar"></li>
+                    <li class="botões__item"><img src="img/compras.png" alt="Comprar"></li>
+                </ul>
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">ENERGIA EM QUILOJOULES</h2>
+        <div class="swiper">
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Energia biodiesel.png"></div>
+                <div class="swiper-slide"><img src="img/Energia etanol.png"></div>
+                <div class="swiper-slide"><img src="img/Energia óleo.png"></div>
+                <div class="swiper-slide"><img src="img/Gráfico de comparação de energias.png"></div>
+            </div>
+
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descrição">
+                    <h2 class="descrição__titulo-livro">ENERGIA EÓLICA</h2>
+                    <p class="descrição__texto">Transformação da energia do vento em energia útil.</p>
+                </div>
+                <img src="img/Eólica.png" class="descrição__imagem">
+            </div>
+
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="img/favs.png" alt="Favoritar"></li>
+                    <li class="botões__item"><img src="img/compras.png" alt="Comprar"></li>
+                </ul>
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>
