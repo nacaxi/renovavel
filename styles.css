@@ -1,13 +1,16 @@
 @import url("styles/header.css");
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
+@import url("styles/video.css");
+@import url("styles/tema.css");
+@import url("styles/rodapé.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
     --laranja: #EB9B00;
     --vermelho-degrade: linear-gradient(97.54deg, #B80B00 35.49%, #b89c00 165.37%);
-    --fonte-principal: "Poppins";
+    --fonte-principal: "Lexend";
     --azul: #002F52;
 }
 

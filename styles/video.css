@@ -1,0 +1,17 @@
+.video {
+    background: var(--vermelho-degrade);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.video__titulo {
+    color: var(--branco);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.video__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
