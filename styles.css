@@ -11,7 +11,10 @@
     --laranja: #EB9B00;
     --vermelho-degrade: linear-gradient(97.54deg, #B80B00 35.49%, #b89c00 165.37%);
     --fonte-principal: "Lexend";
-    --azul: #002F52;
+    --vermelho: #520000;
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
 }
 
 body {
